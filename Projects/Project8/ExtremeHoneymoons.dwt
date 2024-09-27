@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<!-- #BeginEditable "doctitle" -->
+
+<title>Extreme Honeymoons: Home</title>
+
+<!-- #EndEditable -->
+
+<script type="text/javascript" src="myscripts.js"></script>
+
+<link href="mystyles.css" rel="stylesheet" type="text/css">
+
+<link href="print.css" rel="stylesheet" type="text/css" media="print">
+
+<style type="text/css">
+.auto-style2 {
+	font-size: xx-small;
+}
+</style>
+
+</head>
+
+<body  onload="preloadImages()">
+
+<header>
+
+	<a href="index.htm" onMouseOver="document.logo.src=logo2.src;"
+	onMouseOut="document.logo.src=logo1.src;">
+		
+		<img src="images/logo1.jpg" width="175" height="150" name="logo" alt="logo" class="logoleft"/>
+	</a>	
+		<img src="images/Banner.jpg" width="600" height="150" name="banner" alt="banner" class="bannerright">
+		
+	</header>
+	
+		<section>
+		
+			<nav>
+				<a href="home.htm" >&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				<br>
+				<a href="aboutus.htm">&nbsp;About Us&nbsp;</a>
+				<br>
+				<a href="tributes.htm">&nbsp;Tributes&nbsp;&nbsp;&nbsp;</a>
+				<br>
+				<a href="favorites.htm">&nbsp;My Favorites&nbsp;</a>
+				<br>
+				<a href="survey.htm">&nbsp;Survey&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			</nav>
+			
+			<!-- #BeginEditable "PageContent" -->
+			
+			<article>
+			
+				<h1>Welcome to</h1>
+				<h1>Extreme Honeymoons!
+				</h1>
+				
+				<p>If you are just getting hitched, we can help make your 
+				honeymoon outrageous.<br>Take a look at our Excursions and take 
+				the opportunity to complete our survey.
+				</p>
+				
+				<h1 class="desc">Pictures of the Month:</h1>			
+			
+					<div id="thumbs" style="width: 650px">
+					<img src="Images/Thumbnails/Image1Sm.jpg" alt="Hunting Couple" onmouseover="swapImage(0);" />
+					<img src="Images/Thumbnails/Image2Sm.jpg" alt="Biking Couple" onmouseover="swapImage(1);" />
+					<img src="Images/Thumbnails/Image3Sm.jpg" alt="Scuba Couple" onmouseover="swapImage(2);" />
+					<img src="Images/Thumbnails/Image4Sm.jpg" alt="Skiing Couple" onmouseover="swapImage(3);" />
+					</div>
+					
+					<div id="image">					
+					<img id="theImage" src="Images/FullSize/Image1Lg.jpg" alt="Hunting Couple" />
+					<h3 id="bottomText">Newlyweds Sailing</h3>
+					</div>
+						
+				<hr>
+					
+					<h2 class="header">What Our Customers Have Been Saying...</h2>
+					
+					<img alt="Sailing" src="images/Tributes/SailingSmall.jpg" class="auto-style1" width="250px"> 
+					<p>"Text and mini tribute"<a href="tributes.htm">more...</a>					
+					
+					</p>
+					
+			</article>
+		
+		<!-- #EndEditable -->
+		
+		</section>
+	
+	<footer>
+	
+		<p class="footer">This web site has been created solely for 
+		educational purposes.
+		<br>
+		<br>Email: <a href="mailto:10034867@my.uvu.edu">Lin McKinnon</a></p>
+	
+	</footer>
+	
+	
+</body>
+
+</html>

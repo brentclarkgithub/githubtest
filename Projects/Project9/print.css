@@ -1,0 +1,70 @@
+﻿.print-off{
+	display:none;
+}
+
+body{
+	background-color: white;
+	margin: auto;
+	border:none;
+	width:100%;
+}
+
+header {
+	display:none;
+}
+
+section {
+	border:none;
+	margin: auto;
+	width: 100%
+}
+
+
+article	{
+	width: 95%;
+	margin: auto;
+	border:none;
+	padding-right: 5px;
+}
+
+hr{
+	border-style: none none solid none;
+	border-width: 3px;
+	border-color: black;
+	text-align: center;
+}
+
+h1{	
+	text-align: center;	
+}
+
+h2{	
+	text-align: center;	
+}
+
+h3{	
+	text-align: center;	
+}
+
+h5{
+	text-align: center;	
+}
+
+.thumbnailleft{	
+	display:none;
+}	
+
+.thumbnailright{
+	display:none;
+}
+
+.menu	{
+	display:none;
+}
+nav{
+	display:none;
+}
+
+footer	{
+	display:none;
+}

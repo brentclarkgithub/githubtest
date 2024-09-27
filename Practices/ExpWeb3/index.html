@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forms in Expression Web</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+form {
+	border: 5px solid navy;
+	padding: 5px;
+	background-color: lightgray;
+	font-family: tahoma;
+}
+fieldset {
+	border-style: solid none none none;
+	border-width: 2px;
+	border-color: green;
+	margin: 0px;
+}
+legend {
+	font-weight: bold;
+	color: navy;
+}
+form ol {
+	list-style-type: none;
+}
+form li {
+	padding-bottom: 10px;
+}
+label {
+	float: left;
+	width: 150px;
+	padding-right: 5px;
+	text-align: right;
+}
+input.filled,select,textarea {
+	width: 150px;
+	background-color: lightblue;
+	color: black;
+}
+.red {
+	color: red;
+}
+input.button {
+	border: 5px groove navy;
+	background-color: royalblue;
+	width: 200px;
+	height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<form action="FormToEmail.php" method="post" name="CustomerService" target="_blank">
+	<h2>Please complete the following information:</h2>
+	<p>The * marks the required fields.</p>
+<fieldset id="CustomerInfo">
+				<legend>Customer Information</legend>
+				
+				<ol>
+					<li>
+						<label id="FNameLBL" for="FNameTXT"><span class="red">*</span>First Name:</label>
+						<input name="FName" type="text" id="FNameTXT" size="30" tabindex="1" class="filled"/>
+					</li >
+					<li>
+						<label id="LNameLBL" for="LNameTXT"><span class="red">*</span>Last Name:</label>
+						<input name="LName" type="text" id="LNameTXT" size="30" tabindex="2" class="filled"/>
+					</li >
+					<li>
+						<label id="EmailLBL" for="EmailTXT">Email:</label>
+						<input name="Email" type="text" id="EmailTXT" size="30" tabindex="3" class="filled"/>
+					</li >
+					<li>
+						<label id="JobTitleLBL" for="JobTitleDDB">Job Title:</label>
+						<select name="JobTitle" id="JobTitleDDB" size="1" tabindex="4">
+							<option value="Manager">Manager</option>
+							<option value="Supervisor">Supervisor</option>
+							<option selected="" value="Worker Bee">Worker Bee
+							</option>
+						</select>
+					</li >
+				</ol>				
+				</span>				
+			</fieldset>
+			
+			<fieldset id="ErrorInfo">
+				<legend>Error Information</legend>
+				<ol>
+					<li>
+						<label id="SeverityLBL" for="SeverityDDB">Severity 1-5:</label>
+						<select name="Severity" id="JobTitleDDB" size="1" tabindex="5">
+							<option value="1" selected="">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>		
+				</ol>
+				<fieldset id="TimeDay">
+				<legend>Time of Day</legend>
+					<ol>
+					<li>
+						<label id="MorningLBL" for="MorningRB">Morning:</label>
+						<input name="Time" type="radio" id="MorningRB" tabindex="6"/>
+					</li>
+					<li>
+						<label id="AfternoonLBL" for="AfternoonRB">Afternoon:</label>
+						<input name="Time" type="radio" id="AfternoonRB" tabindex="7"/>
+					</li>
+					<li>
+						<label id="EveningLBL" for="EveningRB">Evening:</label>
+						<input name="Time" type="radio" id="EveningRB" tabindex="8"/>
+					</li>
+				</ol>
+				
+			</fieldset>
+			<fieldset ID="ErrorType">
+				<legend>ErrorType</legend>
+				<ol>
+					<li>
+						<label id="HumanLBL">Human:</label>
+						<input name="Human" type="checkbox" id="HumanCB"tabindex="9" />
+					</li>
+					<li>
+						<label id="SoftwareLBL">Software:</label>
+						<input name="Software" type="checkbox" id="SoftwareCB" tabindex="10" />
+					</li>
+					<li>
+						<label id="HardwareLBL">Hardware:</label>
+						<input name="Hardware" type="checkbox" id="HardwareCB" tabindex="11" />
+					</li>
+				</ol>
+			</fieldset>
+		</fieldset>
+<ol>
+	<li>
+	<label id="CommentLBL">Add a Comment:</label>	
+	<textarea name="Comment" cols="20" rows="4" id="CommentTXA" tabindex="12"></textarea>
+	</li>
+	<li>
+		<input name="Submit1" type="submit" value="submit" class="button" />
+		<input name="Reset1" type="reset" value="reset" class="button" />
+	</li>
+</ol>
+
+
+</form>
+
+
+
+</body>
+</html>

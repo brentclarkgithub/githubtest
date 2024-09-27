@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- #BeginTemplate "ExtremeHoneymoons.dwt" -->
+
+<head>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<!-- #BeginEditable "doctitle" -->
+
+<title>Extreme Honeymoons: Customer Survey</title>
+
+<style type="text/css">
+form.h4 {
+	text-align: center;
+}
+form h4 {
+	text-align: center;
+}
+form p {
+	text-align: center;
+}
+form h6 {
+	text-align: center;
+	color: #C85900;
+}
+</style>
+
+<!-- #EndEditable -->
+
+<script type="text/javascript" src="myscripts.js"></script>
+
+<link href="mystyles.css" rel="stylesheet" type="text/css">
+
+<link href="print.css" rel="stylesheet" type="text/css" media="print">
+
+<style type="text/css">
+.auto-style2 {
+	font-size: xx-small;
+}
+</style>
+
+</head>
+
+<body  onload="preloadImages()">
+
+<header>
+
+	<a href="index.htm" onMouseOver="document.logo.src=logo2.src;"
+	onMouseOut="document.logo.src=logo1.src;">
+		
+		<img src="images/logo1.jpg" width="175" height="150" name="logo" alt="logo" class="logoleft"/>
+	</a>	
+		<img src="images/Banner.jpg" width="600" height="150" name="banner" alt="banner" class="bannerright">
+		
+	</header>
+	
+		<section>
+		
+			<nav>
+				<a href="home.htm" >&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				<br>
+				<a href="aboutus.htm">&nbsp;About Us&nbsp;</a>
+				<br>
+				<a href="tributes.htm">&nbsp;Tributes&nbsp;&nbsp;&nbsp;</a>
+				<br>
+				<a href="favorites.htm">&nbsp;My Favorites&nbsp;</a>
+				<br>
+				<a href="survey.htm">&nbsp;Survey&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			</nav>
+			
+			<!-- #BeginEditable "PageContent" -->
+			
+			<article>
+			
+<h1>Customer Survey</h1>
+				
+<form action="FormToEmail.php" method="post" name="CustomerService" target="_blank">
+	<h4>Please complete the following information:</h4>
+	<p>* = Required fields.</p>
+<fieldset id="CustomerInfo">
+				<legend>Customer Information</legend>
+				
+				<ol>
+					<li>
+						<label id="FNameLBL" for="FNameTXT"><span class="red">*</span>First Name:</label>
+						<input name="FName" type="text" id="FNameTXT" size="30" tabindex="1" class="filled"/>
+					</li >
+					<li>
+						<label id="LNameLBL" for="LNameTXT"><span class="red">*</span>Last Name:</label>
+						<input name="LName" type="text" id="LNameTXT" size="30" tabindex="2" class="filled"/>
+					</li >
+					<li>
+						<label id="EmailLBL" for="EmailTXT"><span class="red">*</span>Email:</label>
+						<input name="Email" type="text" id="EmailTXT" size="30" tabindex="3" class="filled"/>
+					</li >
+					<li>
+						<label id="HowLBL" for="HowDDB">How did you hear about us?</label>
+						<select name="How" id="HowDDB" size="1" tabindex="4">
+							<option value="Facebook">Facebook Ad</option>
+							<option value="Instagram">Instagram</option>
+							<option value="Magazine">Bridal Magazine</option>
+							<option value="Magazine1">Travel Magazine</option>
+							<option selected="" value="Word">Word of Mouth</option>
+							<option value="Flyer">Flyer</option>
+						</select>
+					</li >
+					<li>
+						<label id="InterestLBL" for="InterestDDB">Would you like more information?</label>
+						<select name="Interest" id="InterestDDB" size="1" tabindex="5">
+							<option selected="" value="Yes">Yes</option>
+							<option value="No">No Thanks</option>
+						</select>
+					</li>
+				</ol><br>
+					<p>If you have been on one of our adventures, please continue with the survey ...</p>						
+			</fieldset>
+			
+			<fieldset id="Rating">
+				<legend>Rate Your Experience</legend>
+				<ol>
+					<li>
+						<label id="RatingLBL" for="RatingDDB">How would you rate your experience 1-5: (5=Excellent,1=meh)</label>
+						<select name="Rating" id="RatingDDB" size="1" tabindex="6">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5" selected="">5</option>
+						</select>
+					</li>		
+				</ol>
+				<br>
+				<fieldset id="Adventure">
+				<legend>Adventure</legend>
+				<p>Which Adventure(s) did you experience?</p>
+					<ol>
+					<li>
+						<label id="SnowSkiingLBL" for="SnowSkiingRB">Snow Skiing:</label>
+						<input name="Snow" type="radio" id="SnowSkiingRB" tabindex="7"/>
+					</li>
+					<li>
+						<label id="WaterSkiingLBL" for="WaterSkiingRB">Water Skiing:</label>
+						<input name="Water" type="radio" id="WaterSkiingRB" tabindex="8"/>
+					</li>
+					<li>
+						<label id="BikingLBL" for="BikingRB">Biking:</label>
+						<input name="Bike" type="radio" id="BikingRB" tabindex="9"/>
+					</li>
+					<li>
+						<label id="HuntingLBL" for="HuntingRB">Hunting:</label>
+						<input name="Hunt" type="radio" id="HuntingRB" tabindex="10"/>
+					</li>
+					<li>
+						<label id="ScubaLBL"for="ScubaRB">Scuba:</label>
+						<input name="Scuba" type="radio" id="ScubaRB" tabindex="11"/>
+					</li>
+					<li>
+						<label id="CustomLBL"for="ScubaRB">Customized Adventure:</label>
+						<input name="Custom" type="radio" id="CustomRB" tabindex="12"/>
+					</li>
+
+
+				</ol>
+				
+			</fieldset>
+			<fieldset id="Guide">
+				<legend>Guide</legend>
+				<ol>
+					<li>
+						<label id="GuideLBL" for="RatingDDB">Guide's Name:</label><select name="Guide" id="GuideDDB" size="1" tabindex="13">
+							<option value="Alison" selected="">Alison</option>
+							<option value="Bethany">Bethany</option>
+							<option value="Casey">Casey</option>
+							<option value="Jeff">Jeff</option>
+							<option value="Kaori">Kaori</option>
+							<option value="Lisa">Lisa</option>
+							<option value="Will">Will</option>
+							<option value="Zac">Zac</option>
+						</select>
+					</li>
+					<li>
+						<label id="RatingLBL" for="RatingDDB">How would you rate your guide? (5=Excellent,1=meh)</label>
+						<select name="Rating" id="RatingDDB" size="1" tabindex="14">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5" selected="">5</option>
+						</select>
+					</li>				
+					</ol>
+			</fieldset>
+		</fieldset>
+	<fieldset id="Comments">
+				<legend>Comments</legend>	
+					<ol>
+						<li>
+						<label id="CommentLBL">Share your experience:</label>	
+						<textarea name="Comment" rows="4" id="CommentTXA" tabindex="15"></textarea>
+						</li>
+						<li>
+							<input name="Submit1" type="submit" value="submit" class="button" />
+							<input name="Reset1" type="reset" value="reset" class="button" />
+						</li>
+					</ol>
+	</fieldset>
+					
+					
+</form>
+				
+			</article>
+		
+		<!-- #EndEditable -->
+		
+		</section>
+	
+	<footer>
+	
+		<p class="footer">This web site has been created solely for 
+		educational purposes.
+		<br>
+		<br>Email: <a href="mailto:10034867@my.uvu.edu">Lin McKinnon</a></p>
+	
+	</footer>
+	
+	
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
